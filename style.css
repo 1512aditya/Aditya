@@ -1,204 +1,66 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
-@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
-
-@font-face {
-    font-family: "Booter - Zero Zero";
-    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
-         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
-
-* {
-    box-sizing: border-box;
-    font-family: Raleway;
-    color: #777;
-}
-
-html, body {
+body{
     margin: 0;
     padding: 0;
-    min-height: 100%;
-    
-}
-
-.nav ul {
-    margin: 0;
-}
-
-.nav li {
-    display: inline;
-}
-
-.nav a {
-    display: inline-block;
-    padding: .5em;
-    color: white;
-    text-decoration: none;
-}
-
-.main-nav {
-    text-align: center;
-    font-size: 1.1em;
-    font-weight: lighter;
-    border-bottom: 1px solid rgba(255, 255, 255, .3)
-}
-
-.main-nav li {
-    padding: 0 5%;
-}
-
-.nav a:hover {
-    background-color: rgba(29, 97, 97, 0.692)
-}
-
-.main-header {
-    background-color: rgba(0, 0, 0, .6);
-    background-image: url("Images/Album\ 2.png");
-    background-blend-mode: multiply;
+    font-family: 'lato' , sans-serif;
+    font-size: 16px;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(2.jpg);
     background-size: cover;
-    padding-bottom: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.nav{
+    width: 100%;
+    background-color: rgba(450,0,60,0.8);
+    color: #fff;
 }
 
-.band-name {
-    text-align: center;
+.menu{
+    line-height: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav ul{
+    list-style-type: none;
     margin: 0;
-    font-size: 4em;
-    font-family: "Booter - Zero Zero";
-    font-weight: normal;
-    color: rgb(127, 194, 214);
-}
-
-.band-name-large {
-    font-size: 8em;
-}
-
-.content-section {
-    margin: 1em;
-}
-
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 1.5em;
-}
-.section-header {
-    font-family: "Metal Mania";
-    font-weight: normal;
-    color: #333;
-    text-align: center;
-    font-size: 2.5em;
-}
-
-.about-band-image {
-    float: left;
-    height: 200px;
-    width: 200px;
-    margin: 15px;
-    border-radius: 50%;
-}
-
-.main-footer {
-    background-color: #56CCF2;
-    color: white;
-    padding: .25em 0;
-}
-
-.main-footer-container {
-    display: flex;
-    align-items: center;
-}
-
-.main-footer-container ul {
-    flex-grow: 1;
-    text-align: end;
-}
-
-.footer-nav li {
-    padding: 0 .5em;
-}
-
-.footer-nav img {
-    width: 30px;
-    height: 30px;
-}
-
-.btn {
-    text-align: center;
-    vertical-align: middle;
-    padding: .67em .67em;
-    cursor: pointer;
-}
-
-.btn-header {
-    margin: .5em 15% 2em 15%;
-    color: white;
-    border: 2px solid #2D9CDB;
-    background-color: rgba(255, 255, 255, .1);
-    border-radius: 0;
-    font-size: 1.5em;
-    font-weight: lighter;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-.btn-header:hover {
-    background-color: rgba(255, 255, 255, .3);
-}
-
-.btn-play {
-    display: block;
-    margin: 0 auto;
-    color: #2D9CDB;
-    font-size: 4em;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
     padding: 0;
-    text-align: center;
 }
-
-.btn-primary {
-    color: white;
-    background-color: #56CCF2;
-    border: none;
-    border-radius: .3em;
-    font-weight: bold;
-}
-
-.btn-primary:hover {
-    background-color: #2D9CDB;
-}
-
-.tour-row {
-    border-bottom: 1px solid black;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-}
-
-.tour-row:last-child {
-    border: none;
-}
-
-.tour-item {
+.nav .menu .menu_item{
     display: inline-block;
-    padding-right: .5em;
+    position: relative;
 }
-
-.tour-date {
-    color: #555;
-    width: 11%;
-    font-weight: bold;
+.nav .menu .menu_item a{
+    padding: 12px 24px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    display: block;
 }
-
-.tour-city {
-    width: 24%;
+.submenu{
+    display: none;
+    text-transform: none;
+    position: absolute;
+    width: 220px;
+    background-color: rgba(0,0,0,0.8);
 }
-
-.tour-arena {
-    width: 42%;
+.menu_item:hover .submenu{
+    display: block;
 }
-
-.tour-btn {
-    max-width: 19%;
+.submenu_item:hover{
+    background-color: rgba(0,0,0,0.4);
+    border-left: 4px solid red;
+}
+.menu_item:hover{
+    background-color: darkgoldenrod;
+}
+.title h1{
+    color: white;
+    font-size: 70px;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
