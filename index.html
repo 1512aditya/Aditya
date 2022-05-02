@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <br>
+    <div class="img">
+        <img src="1.png" />
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="text">
+        <h1>Apartments &<br> Villas by Adi</h1>
+        <p><i>
+          our agents are engaged<br>
+          and experiance in amdavad<br>
+          real estate market and <br>
+          well informed about there<br>
+          communities and they service.
+      </i></p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button class="button"><a href="1.png"> Contact Us</a></button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <div class="row">
+        <div class="container">
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="2.png">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>
+                            <font color="white">For purchase the Real estate</font>
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="3.png">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>
+                            <font color="white">Anything For Rent </font>
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <footer class="text">
+        <h2>Address:</h2>
+        <p>5/12 vasana Amdavad-380007</p>
+
+        <h2>contact no:</h2>
+        <p>7229050220</p>
+
+        <form class="form" name="myForm" action="" method="post">
+            Name:<br><input type="text" name="Name">
+            <br> E-mail Address:<br> <input type="text" name="email" id="email">
+            <br>
+            <form name="myForm" action="" onsubmit="return validateNumber()" method="post">
+                Telepohone#:<br><input type="text" name="contact" id="contact">
+                <span id="numloc"></span>
+                <br> Address:
+                <br><input type="text" name="Address">
+                <br> Message:
+                <br><input type="text" name="Message">
+                <br>
+                <button><a href="#">submit</a></button>
+                <br>
+                <br>
+            </form>
+    </footer>
+</body>
+
+</html>
