@@ -57,6 +57,7 @@ body {
 .container {
     float: left;
     margin-left: 10%;
+    justify-content: center;
     width: 33.33%;
     padding: 10px;
     height: 300px;
